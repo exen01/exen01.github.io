@@ -1,0 +1,132 @@
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
+html {
+    max-width: auto;
+    flex-wrap: nowrap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0f0f0f;
+    /*background: url(../src/bg.jpg);*/
+    color: #fff;
+    max-width: 520px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body,
+main {
+    flex-direction: column
+}
+
+main {
+    width: auto;
+    max-width: 510px;
+    flex-wrap: nowrap
+}
+
+.avatar img {
+    width: 160px;
+    height: 160px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border-radius: 100%;
+}
+
+.avatar,
+.name,
+.nick,
+html,
+main {
+    display: flex;
+    justify-content: center
+}
+
+.name {
+    font-size: 35px;
+    margin: 20px 50px;
+    flex-wrap: nowrap;
+}
+
+.name,
+.nick {
+    text-align: center
+}
+
+.nick {
+    margin: 0;
+    font-size: 20px;
+}
+
+.social,
+footer {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.social a {
+    font-size: 35px;
+    margin: 10px;
+    display: inline;
+    padding: 10px;
+    text-align: center;
+}
+
+.social .vk i:hover {
+    color: #0077FF;
+}
+
+.social .tg i:hover {
+    color: #0088cc;
+}
+
+[data-tooltip] {
+    position: relative;
+    z-index: 10;
+}
+
+[data-tooltip]:before {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 50%;
+    top: calc(100% + 15px);
+    pointer-events: none;
+    transition: .2s;
+    will-change: transform;
+    content: attr(data-tooltip);
+    padding: 8px 14px;
+    min-width: 50px;
+    max-width: 300px;
+    width: max-content;
+    width: -moz-max-content;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #0f0f0f;
+    text-align: center;
+    white-space: pre-wrap;
+    transform: translate(-50%, -5px) scale(.5)
+}
+
+[data-tooltip]:hover:before {
+    transition-delay: .3s;
+    transform: translate(-50%, -5px) scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px;
+}
