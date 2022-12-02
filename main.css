@@ -1,5 +1,5 @@
 * {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Ubuntu';
 }
 
 html {
@@ -86,6 +86,10 @@ footer {
 
 .social .tg i:hover {
     color: #0088cc;
+}
+
+.social .email i:hover {
+    color: #BB001B;
 }
 
 [data-tooltip] {
